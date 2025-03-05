@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./../../css/styles.css">
+  <link rel="stylesheet" href="./css/desestructuracion.css">
+  <title>Learning</title>
+</head>
+
+<body>
+  <section class="sidebar-container"></section>
+  <section class="big-container">
+    <h1>Desestructuracion de objetos</h1>
+    <p>En JavaScript sirve para extraer valores de un objeto de manera rápida y asignarlos a variables individuales.</p>
+    <code>
+      <pre>
+        const usuario = {
+            nombre: "Alexandra",
+            edad: 28,
+            pais: "México"
+        };
+    
+        // Desestructuración
+        const { nombre, edad } = usuario;
+    
+        console.log(nombre); // "Alexandra"
+        console.log(edad);   // 28
+      </pre>
+    </code>
+
+    <p>las variables dentro del objeto a desestructurar se pueden renombrar:</p>
+    <code>
+      <pre>
+        const perro = {
+          raza:'Puddle',
+          color:'Marrón'
+        }
+  
+        const {raza, color:tono} = perro
+        console.log("Raza: ", raza, " Tono:", tono)
+      </pre>
+    </code>
+  </section>
+
+  <script src="./../../scripts/general.js"></script>
+  <script src="./scripts/desestructuracion.js"></script>
+</body>
+
+</html>
